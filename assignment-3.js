@@ -1,6 +1,12 @@
+//https://github.com/Rahat-Minhaj007/assignment-3
+
+
+
+
+
 //(kilometerTOMeter) assignment start :
 
-function kilometerTOMeter(kilo) {   
+function kilometerTOMeter(kilo) {
     if (kilo < 0) {                     //checking the value is positive or .not            
         return " Don't put any negative value";
 
@@ -50,7 +56,7 @@ function hotelCost(day) {
         return " Don't put any negative value";
     }
     else {
-        if (day <= 10) { 
+        if (day <= 10) {
             var totalCost = day * 100;
             return totalCost;
         }
@@ -87,13 +93,13 @@ function megaFriend(elementName) {
         return "Don't put any empty array"
     }
     else {
-        var max = elementName[0].length;    
+        var max = elementName[0].length;
         var large;
         for (var i = 0; i < elementName.length; i++) {
-            element = elementName[i].length;
-            if (element > max) {
+            element = elementName[i].length; //get every index element length
+            if (element > max) {            //checking element length is getter than or not from the initial value
                 max = element;
-                large = elementName[i];
+                large = elementName[i]; //final result assign on large
             }
         }
         return large;
@@ -102,8 +108,8 @@ function megaFriend(elementName) {
 
 }
 
-var elementName = ["rahat", "minhajulAbedin","abedin","rahatMinhaj","i love the examiner who checking my assignment"];
-var largeFriend = megaFriend(elementName);
+var elementName = ["rahat", "minhajulAbedin", "abedin", "rahatMinhaj", "i love the examiner who checking my assignment"];
+var largeFriend = megaFriend(elementName);  //get the return value from the function
 console.log(largeFriend);
 
 // (megaFriend) assignment finished.
